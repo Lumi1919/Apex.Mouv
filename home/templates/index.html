@@ -374,8 +374,9 @@
                 <div class="col-md-4">
                     <div class="issuse-wrap2 clearfix">
                         <div class="post-media wow fadeIn" id='multi'>
-                            <img src="{{element.image.url}}" alt="" class="img-responsive img-rounded">
-                            <a href="{{element.content}}" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                            <div class="post-media">
+                                <iframe id='iframe' class="img-responsive img-rounded" width="560" height="400" src="{{element.content}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
                         </div><!-- end media -->
                         <h4>"{{element.title}}"</h4>
                         <p>{{element.body | truncatechars:80 }}</p>
