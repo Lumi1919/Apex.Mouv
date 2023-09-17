@@ -89,7 +89,7 @@
 					<p class="wow fadeInUp animated" data-wow-delay="0.2s">Faire pour nous et sans nous, c'est faire contre nous !
                         <br><span class="mandela">Nelson Mandela</span>
                     </p>
-					<a href="#"  data-toggle="modal" data-target="#modalEngagement" class="btn btn-light btn-radius btn-brd grd1">S'ENGAGER</a>
+					<a href="#"  data-toggle="modal" data-target="#modalEngagement" class="btn btn-light btn-radius btn-brd grd1">Nous rejoindre</a>
 				</div> <!-- /.container -->
 			</div> <!-- /.camera_caption -->
 		</div>
@@ -100,7 +100,7 @@
 					<p class="wow fadeInUp animated" data-wow-delay="0.2s">Faire pour nous et sans nous, c'est faire contre nous !
                         <br><span class="mandela">Nelson Mandela</span>
                     </p>
-					<a href="#"  data-toggle="modal" data-target="#modalEngagement" class="btn btn-light btn-radius btn-brd grd1">S'ENGAGER</a>
+					<a href="#"  data-toggle="modal" data-target="#modalEngagement" class="btn btn-light btn-radius btn-brd grd1">Nous rejoindre</a>
 				</div> <!-- /.container -->
 			</div> <!-- /.camera_caption -->
 		</div>
@@ -111,7 +111,7 @@
 					<p class="wow fadeInUp animated" data-wow-delay="0.2s">Faire pour nous et sans nous, c'est faire contre nous !
                         <br><span class="mandela">Nelson Mandela</span>
                     </p>
-					<a href="#"  data-toggle="modal" data-target="#modalEngagement" class="btn btn-light btn-radius btn-brd grd1">S'ENGAGER</a>
+					<a href="#"  data-toggle="modal" data-target="#modalEngagement" class="btn btn-light btn-radius btn-brd grd1">Nous rejoindre</a>
 				</div> <!-- /.container -->
 			</div> <!-- /.camera_caption -->
 		</div>
@@ -129,33 +129,33 @@
             </button>
         </div>
         <div class="modal-body">
-            <form>
+            <form method="post">
                 {% csrf_token %}
             <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Nom:</label>
-                <input type="text" class="form-control" id="recipient-name">
+                <input type="text" class="form-control" id="recipient-name" name="nom">
             </div>
             <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Prénom:</label>
-                <input type="text" class="form-control" id="recipient-name">
+                <input type="text" class="form-control" id="recipient-name" name="prenom">
             </div>
             <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Tel:</label>
-                <input type="phone2numeric" class="form-control" id="recipient-name">
+                <input type="number" class="form-control" id="recipient-name" name="numero">
             </div>
             <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Ville:</label>
-                <input type="text" class="form-control" id="recipient-name">
+                <input type="text" class="form-control" id="recipient-name" name="ville">
             </div>
             <div class="form-group">
                 <label for="message-text" class="col-form-label">Présentation:</label>
-                <textarea class="form-control" id="message-text"></textarea>
+                <textarea class="form-control" id="message-text" name="presentation"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour</button>
+                <button type="submit" class="btn btn-primary" name="btn-adhesion">Valider</button>
             </div>
             </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour</button>
-            <button type="submit" class="btn btn-primary">Valider</button>
         </div>
         </div>
     </div>

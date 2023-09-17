@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Slides, Blog, Multimedia, Galerie, AboutGalerie, Evenement, Solutions, About
+from .models import Slides, Blog, Multimedia, Galerie, AboutGalerie, Evenement, Solutions, About, Adhesion
 
 
 admin.site.register(Slides)
@@ -10,3 +10,4 @@ admin.site.register(AboutGalerie)
 admin.site.register(Evenement)
 admin.site.register(Solutions)
 admin.site.register(About)
+admin.site.register(Adhesion)

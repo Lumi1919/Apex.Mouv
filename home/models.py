@@ -98,3 +98,15 @@ class Slides(models.Model):
         return self.title
     
 
+class Adhesion(models.Model):
+    nom = models.CharField(max_length=250, null=True, blank=True)
+    prenom = models.CharField(max_length=250, null=True, blank=True)
+    numero = models.IntegerField(null=True, blank=True)
+    ville = models.CharField(max_length=250, null=True, blank=True)
+    presentation = models.TextField(null=True, blank=True)
+    date = models.DateTimeField(auto_now=True)
+    
+
+    def __str__(self):
+        return self.prenom
+    
