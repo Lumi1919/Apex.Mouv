@@ -382,7 +382,7 @@
 	.section.wb .hover-up h3{
 		font-size: 18px;
 	}
-	.section.wb .hover-up p{
+	.section.wb span{
 		display: none;
 	}
 	body.politics_version .issuse-wrap h4{
@@ -495,9 +495,7 @@
 	.section.wb .hover-up h3{
 		font-size: 18px;
 	}
-	.section.wb .hover-up p{
-		display: none;
-	}
+	
 	body.politics_version .issuse-wrap h4{
 		clear: both;
 		margin-top: 10px;
