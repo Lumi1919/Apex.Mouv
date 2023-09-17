@@ -130,6 +130,7 @@
         </div>
         <div class="modal-body">
             <form>
+                {% csrf_token %}
             <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Nom:</label>
                 <input type="text" class="form-control" id="recipient-name">
@@ -154,7 +155,7 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour</button>
-            <button type="button" class="btn btn-primary">Valider</button>
+            <button type="submit" class="btn btn-primary">Valider</button>
         </div>
         </div>
     </div>
@@ -356,7 +357,7 @@
                 {% endif %}
                 {% endfor %}
 
-		q	</div>
+			</div>
 			</div>
 		</div>
 	</div>
