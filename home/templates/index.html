@@ -89,7 +89,7 @@
 					<p class="wow fadeInUp animated" data-wow-delay="0.2s">Faire pour nous et sans nous, c'est faire contre nous !
                         <br><span class="mandela">Nelson Mandela</span>
                     </p>
-					<a data-scroll-nav="7" href="#contact" class="btn btn-light btn-radius btn-brd grd1">DONATION</a>
+					<a href="#"  data-toggle="modal" data-target="#modalEngagement" class="btn btn-light btn-radius btn-brd grd1">S'ENGAGER</a>
 				</div> <!-- /.container -->
 			</div> <!-- /.camera_caption -->
 		</div>
@@ -100,7 +100,7 @@
 					<p class="wow fadeInUp animated" data-wow-delay="0.2s">Faire pour nous et sans nous, c'est faire contre nous !
                         <br><span class="mandela">Nelson Mandela</span>
                     </p>
-					<a data-scroll-nav="7" href="#contact" class="btn btn-light btn-radius btn-brd grd1">DONATION</a>
+					<a href="#"  data-toggle="modal" data-target="#modalEngagement" class="btn btn-light btn-radius btn-brd grd1">S'ENGAGER</a>
 				</div> <!-- /.container -->
 			</div> <!-- /.camera_caption -->
 		</div>
@@ -111,11 +111,56 @@
 					<p class="wow fadeInUp animated" data-wow-delay="0.2s">Faire pour nous et sans nous, c'est faire contre nous !
                         <br><span class="mandela">Nelson Mandela</span>
                     </p>
-					<a data-scroll-nav="7" href="#contact" class="btn btn-light btn-radius btn-brd grd1">DONATION</a>
+					<a href="#"  data-toggle="modal" data-target="#modalEngagement" class="btn btn-light btn-radius btn-brd grd1">S'ENGAGER</a>
 				</div> <!-- /.container -->
 			</div> <!-- /.camera_caption -->
 		</div>
 	</div> <!-- /#theme-main-banner -->
+
+    <!-- Modal s'engager  -->
+   
+    <div class="modal fade" id="modalEngagement" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Devenir Membre <span>#APEX<sapn></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Nom:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Prénom:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Tel:</label>
+                <input type="phone2numeric" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Ville:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+                <label for="message-text" class="col-form-label">Présentation:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour</button>
+            <button type="button" class="btn btn-primary">Valider</button>
+        </div>
+        </div>
+    </div>
+    </div>
+   
+    <!-- Fin Modal s'engager -->
     {% endfor %}
 
 
@@ -126,7 +171,7 @@
                     <div class="message-box">
                         <h4>Qui sommes-nous ?</h4>
                         <h2>Bienvenue dans APEX</h2>
-                        <blockquote class="lead">Incarner l'excellence ne signifie pas débarquer dans l'espace public tel un héros de Marvel. Il s'agit de s'ancrer dans un combat pour l'exemplarité, un combat de tous les jours pour offrir le meilleur de nous-même à notre à notre pays.</blockquote>
+                        <blockquote class="lead">Incarner l'excellence ne signifie pas débarquer dans l'espace public tel un héros de Marvel. Il s'agit de s'ancrer dans un combat pour l'exemplarité, un combat de tous les jours pour offrir le meilleur de nous-même à notre pays.</blockquote>
 
                         <p> Dans le langage courant, le terme « apex » désigne le sommet ou le point culminant de toute chose. C'est en ce sens qu'il représente le summum de l'excellence, l'idéal vers lequel nous tendons tous lorsque nous sommes en quête d'accomplissement.  </p>
 
@@ -311,7 +356,7 @@
                 {% endif %}
                 {% endfor %}
 
-			</div>
+		q	</div>
 			</div>
 		</div>
 	</div>
@@ -366,7 +411,7 @@
 							<a href="#"  data-toggle="modal" data-target="#blog{{element.id}}"><h4>{{element.title}}</h4></a>
 							<ul>
                                 <li>Par <b>{{element.author}}</b></li><br>
-                                <li><a href="#"><b> Commentaires</b></a></li>
+                                <li><a><b> Commentaires</b></a></li>
                             </ul>
 							<p>{{element.body | truncatechars:120}}</p>
 						</div>
@@ -488,6 +533,16 @@
         myModal.addEventListener('shown.bs.modal', () => {
         myInput.focus()
         })
+
+        $("#modalEngagement").on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('.modal-title').text('New message to ' + recipient)
+            modal.find('.modal-body input').val(recipient)
+          })
     </script>
 
 </body>

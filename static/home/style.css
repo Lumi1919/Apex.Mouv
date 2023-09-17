@@ -2620,3 +2620,7 @@ select.mobile-device {
 .modal-header span{
     font-weight: bold;
 }
+
+#exampleModalLabel span{
+    color: rebeccapurple;
+}
