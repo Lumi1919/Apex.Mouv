@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-bsnjrm5bkr&qg_oj9gynmqd(p4yplh)f5)95ai1pf_smt$_srx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['apex-nw6h.onrender.com']
 
 
 # Application definition
