@@ -51,7 +51,7 @@
     <!-- END LOADER -->
 
     <div class="topbar text-center hidden-xs">
-        <p>APEX est un mouvement investi dans le développement social et dans la réalisation d'actions citoyennes. <a href="#">Rejoingnez-nous ! </a></p>
+        <p>APEX est un mouvement investi dans le développement social et dans la réalisation d'actions citoyennes.</p>
     </div>
 
     <header class="header header_style_01">
@@ -248,7 +248,7 @@
                                 <h5 class="modal-title" id="exampleModalLongTitle">{{element.title}}</h5>
                                 </div>
                                 <div class="modal-body">
-                                {{element.body}}
+                                {{element.body|linebreaks }}
                                 </div>
                                 <div class="modal-header">
                                     <h6>Par  <span>{{element.author}}<span></h6>
@@ -306,7 +306,7 @@
                             <h5 class="modal-title" id="exampleModalLongTitle">{{element.title}}</h5>
                             </div>
                             <div class="modal-body">
-                            {{element.body}}
+                            {{element.body|linebreaks }}
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
@@ -336,9 +336,9 @@
 					<div class="button-group filter-button-group text-center">
 						<button class="active" data-filter="*">Tout</button>
 						<button data-filter=".RENCONTRES">Rencontres</button>
-						<button data-filter=".PROJETS">Evènements</button>
+						<button data-filter=".EVENEMENTS">Evènements</button>
 						<button data-filter=".REALISATIONS">Réalisations</button>
-						<button data-filter=".EVENEMENTS">Projets</button>
+						<button data-filter=".PROJETS">Projets</button>
 					</div>
 				</div>
 			</div>
@@ -545,6 +545,7 @@
             modal.find('.modal-title').text('New message to ' + recipient)
             modal.find('.modal-body input').val(recipient)
           })
+          
     </script>
 
 </body>

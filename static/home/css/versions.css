@@ -27,7 +27,7 @@ body.politics_version .participate-wrap small,
 body.politics_version .message-box h4,
 body.politics_version .customwidget li i,
 body.politics_version .navbar-nav span {
-    color: #cd1713 !important;
+    color: rebeccapurple !important;
 }
 
 body.politics_version .lead strong,
@@ -49,7 +49,7 @@ body.politics_version .nav-pills > li.active > a:hover,
 body.politics_version .icon-wrapper:hover i,
 body.politics_version .grd1 {
     color: #ffffff;
-    background: #f44336;    
+    background: rebeccapurple;    
 }
 
 body.politics_version .icon_wrap,
@@ -117,7 +117,7 @@ body.politics_version .topbar {
     display: block;
     padding: 8px 20px;
     position: relative;
-    background-color: #cd1713;
+    background-color: rebeccapurple;
     color: #ffffff;
 }
 
@@ -135,7 +135,7 @@ body.politics_version .issuse-wrap {
     padding: 20px 0;
     display: block;
     position: relative;
-    border-bottom: 1px dashed #f44336;
+    border-bottom: 1px dashed rebeccapurple;
 }
 
 body.politics_version .issuse-wrap p,

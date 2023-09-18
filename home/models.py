@@ -59,6 +59,10 @@ class Solutions(models.Model):
     author_image = models.ImageField(null=True, blank=True)
     author = models.CharField(max_length=250,null=True, blank=True)
     date = models.DateTimeField(auto_now=True)
+    
+    def get_body(self):
+        return "<br />".join([p.bodies for p in self.body.all()])
+    get_body.allow_tags = True
 
     def __str__(self):
         return self.title

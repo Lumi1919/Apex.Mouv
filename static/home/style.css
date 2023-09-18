@@ -412,7 +412,7 @@ a img.aligncenter {
 }
 
 .header_style_01 .navbar-default .navbar-nav > li a.active{
-	color: #f44336;
+	color: rebeccapurple;
 }
 
 .header_style_01 .navbar-default .navbar-nav > li:hover a,
@@ -526,7 +526,7 @@ li.social-links a {
 }
 
 #main-banner.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent{
-	background: #f44336;
+	background: rebeccapurple;
 }
 
 #main-banner.camera_wrap .camera_pag .camera_pag_ul li span {
@@ -1222,7 +1222,7 @@ li.social-links a {
 }
 
 .event_dit ul li a:hover{
-	color: #f44336;
+	color: rebeccapurple;
 }
 
 .service-widget h3 {
@@ -1237,7 +1237,7 @@ li.social-links a {
 	position: relative;
 }
 .participate-wrap figure::before{
-	background-color: #f44336;
+	background-color: rebeccapurple;
 	content: "";
 	position: absolute;
 	border-radius: 100%;
@@ -1538,7 +1538,7 @@ hr.invis1 {
 }
 
 .filter-button-group button.active{
-	background: #f44336;
+	background: rebeccapurple;
 	color: #fff;
 	box-shadow: 2px 20px 45px 5px rgba(0,0,0,.2);	
 }
@@ -1574,7 +1574,7 @@ hr.invis1 {
     left: 10px;
     right: 10px;
     bottom: 10px;
-    background: rgba(244, 67, 54, 0.80);
+    background: rebeccapurple;
     color: #35424C;
     opacity: 0;
     -webkit-transition: all .5s;
@@ -1631,7 +1631,7 @@ hr.invis1 {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: rgba(244, 67, 54, 0.80);
+	background-color: rebeccapurple;
 	opacity: 0;
 	-webkit-transition: all .5s;
 	transition: all .5s;
@@ -1832,7 +1832,7 @@ hr.invis1 {
 
 .has-error .bootstrap-select .dropdown-toggle,
 .error .bootstrap-select .dropdown-toggle {
-    border-color: #b94a48;
+    border-color: rebeccapurple;
 }
 
 .bootstrap-select.fit-width {
@@ -2263,7 +2263,7 @@ select.mobile-device {
 
 .footer-links a:hover,
 .footer a:hover {
-    color: #f44336 !important;
+    color: rebeccapurple !important;
 }
 
 .footer-links li {
@@ -2401,7 +2401,7 @@ select.mobile-device {
 }
 
 .footer-distributed .footer-company-name a:hover{
-	color: #f44336;
+	color: rebeccapurple;
 }
 
 /*------------------------------------------------------------------
@@ -2623,6 +2623,10 @@ select.mobile-device {
 
 #exampleModalLabel span{
     color: rebeccapurple;
+}
+
+.modal-title{
+    color:rebeccapurple;
 }
 
 
