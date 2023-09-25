@@ -20,7 +20,7 @@ def index(request):
     galeries = Galerie.objects.all().order_by('-date')
     articles = Blog.objects.all().order_by('-date')
     multimedias = Multimedia.objects.all().order_by('-date')
-    abouts = About.objects.all()
+    abouts = About.objects.all().order_by('-date')
     context = {'solutions': solutions,
                'slides' : slides,
                'events' : events,
